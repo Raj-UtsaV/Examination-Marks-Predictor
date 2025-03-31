@@ -123,6 +123,7 @@ celerybeat.pid
 .housing
 .env
 .venv
+.rapids_env/
 housing/
 env/
 venv/
