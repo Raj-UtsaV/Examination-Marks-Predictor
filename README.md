@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🧑‍🎓 Examination-Marks-Predictor 📊
 
 This machine learning project predicts the **Math marks** of students based on various factors such as **Gender**, **Ethnicity**, **Parental Level of Education**, **Lunch Type**, **Test Preparation Course**, and individual **Reading** and **Writing Scores**. 
@@ -129,3 +130,6 @@ Examination-Marks-Predictor/
 ## 📞 Contact
 
 - Email: [utsavraj911@outlook.com](utsavraj911@outlook.com)
+=======
+# Machine Learning Project
+>>>>>>> parent of 4293604 (Update README.md)
