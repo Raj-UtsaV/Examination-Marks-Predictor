@@ -28,7 +28,7 @@ class DataIngestion:
         try:
             file_path = os.path.join("notebook", "data", "stud.csv")  ## create path for stu.csv
             df = pd.read_csv(file_path)
-            logging.info("Read the dataset as dataframw")
+            logging.info("Read the dataset as dataframe")
             
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)
              
