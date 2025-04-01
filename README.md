@@ -9,6 +9,7 @@ By using this model, we aim to understand how these factors impact students' aca
 ## 📋 Project Overview
 
 This project aims to predict student performance in **Mathematics** based on key factors such as:
+
 - **Gender** 👦👧
 - **Race or Ethnicity** 🌍
 - **Parental Level of Education** 🎓
@@ -51,14 +52,11 @@ The machine learning model is trained using various features that influence stud
 ---
 
 ## ⚙️ Technologies Used
+
 - **Python** 🐍
-
 - **pandas** 📊
-
 - **scikit-learn** 🔍
-
 - **Matplotlib** 📈
-
 - **Jupyter Notebook** 📝
 
 ---
@@ -66,6 +64,7 @@ The machine learning model is trained using various features that influence stud
 ## 🗂️ Repository File Tree
 
 ```
+
 Examination-Marks-Predictor/
 ├── notebook                          # Jupyter notebooks for data exploration & model training
 │   ├── 1. EDA_STUDENT_PERFORMANCE.ipynb  # Exploratory Data Analysis (EDA) notebook
@@ -93,6 +92,7 @@ Examination-Marks-Predictor/
                      # Project documentation (this file)
 
 ```
+
 ---
 
 ## 🔧 Installation & Setup
@@ -106,16 +106,11 @@ Examination-Marks-Predictor/
 
 **2.** Install the required dependencies:
 
-    
-    pip install -r requirements.txt
-    
-
-**3.** Run the notebook or Python script to train and predict the student's performance.
-
 ---
 
 ## 🚀 How to Use
-**1. Data Input:** The user can select or input values for the following features: 
+
+**1. Data Input:** The user can select or input values for the following features:
 
 - **Gender** (Male/Female)
 - **Race/Ethnicity** (Group A, B, C, D, E)
@@ -131,13 +126,6 @@ Examination-Marks-Predictor/
 
 ---
 
-
 ## 📞 Contact
 
 - Email: [utsavraj911@outlook.com](utsavraj911@outlook.com)
-
-
-
-
-
-
