@@ -10,8 +10,8 @@ from dataclasses import dataclass
 from src.components.data_transformation import DataTransformation
 from src.components.data_transformation import DataTransformationConf
 
-from src.components.mode_trainer import ModelTrainer
-from src.components.mode_trainer import ModelTrainerConfig 
+from src.components.model_trainer import ModelTrainer
+from src.components.model_trainer import ModelTrainerConfig 
 
 @dataclass
 class DataIngestonConf:
@@ -46,7 +46,7 @@ class DataIngestion:
             logging.info("Ingestion of data is completed")
             
             return(
-                self.ingestion_config.test_data_path,
+                self.ingestion_config.train_data_path,
                 self.ingestion_config.test_data_path
             )
             
@@ -63,4 +63,4 @@ if __name__=="__main__":
     train_arr,test_arr,_ = data_transformation.initiate_data_transformation(train_data,test_data)
     
     model_trainer = ModelTrainer()
-    print(model_trainer.initiate_mode_trainer(train_arr,test_arr))
+    print(model_trainer.initiate_model_trainer(train_arr,test_arr))
