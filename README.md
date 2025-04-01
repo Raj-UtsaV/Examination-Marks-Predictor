@@ -76,7 +76,7 @@ Examination-Marks-Predictor/
 |   │   ├── __init__.py                    # Marks components as a package
 |   │   ├── data_ingestion.py              # Script to load and preprocess data
 |   │   ├── data_transformation.py         # Handles feature transformation & scaling
-|   │   ├── mode_trainer.py                # Model training script
+|   │   ├── model_trainer.py                # Model training script
 |   ├── exception.py                        # Custom exception handling
 |   ├── logger.py                           # Logging setup for debugging & tracking
 |   ├── pipeline                            # Pipeline for model training & prediction
