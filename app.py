@@ -31,17 +31,17 @@ def predict_datapoint():
 
         )
         pred_df=data.get_data_as_data_frame()
-        print(pred_df)
-        print("Before Prediction")
+        #print(pred_df)
+        #print("Before Prediction")
 
         predict_pipeline=PredictPipeline()
-        print("Mid Prediction")
+        #print("Mid Prediction")
         results=predict_pipeline.predict(pred_df)
-        print("after Prediction")
+        #print("after Prediction")
         return render_template('home.html', results=min(100, max(0, results[0])))
     
 
 if __name__=="__main__":
-    app.run(host="0.0.0.0",debug=True)        
+    app.run(host="0.0.0.0")        
 
 
