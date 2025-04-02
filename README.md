@@ -4,6 +4,8 @@ This machine learning project predicts the **Math marks** of students based on v
 
 By using this model, we aim to understand how these factors impact students' academic performance in mathematics. 🎯
 
+<br>check out -> [Examination-Marks-Predictor](https://examination-marks-predictor.onrender.com)<br>
+
 ---
 
 ## 📋 Project Overview
@@ -65,30 +67,39 @@ The machine learning model is trained using various features that influence stud
 
 ```bash
 Examination-Marks-Predictor/
-├── notebook                          # Jupyter notebooks for data exploration & model training
+├── notebook                              # Jupyter notebooks for data exploration & model training
 │   ├── 1. EDA_STUDENT_PERFORMANCE.ipynb  # Exploratory Data Analysis (EDA) notebook
 │   ├── 2. MODEL_TRAINING.ipynb           # Model training and evaluation notebook
 │   └── data                              # Directory for dataset storage
 │       └── stud.csv                      # Student performance dataset
-|── src                                   # Source code for the project
-|   ├── __init__.py                       # Marks src as a package
-|   ├── components                         # Core project modules
-|   │   ├── __init__.py                    # Marks components as a package
-|   │   ├── data_ingestion.py              # Script to load and preprocess data
-|   │   ├── data_transformation.py         # Handles feature transformation & scaling
-|   │   ├── model_trainer.py                # Model training script
-|   ├── exception.py                        # Custom exception handling
-|   ├── logger.py                           # Logging setup for debugging & tracking
-|   ├── pipeline                            # Pipeline for model training & prediction
-|   │   ├── __init__.py                     # Marks pipeline as a package
-|   │   ├── predict_pipeline.py             # Prediction pipeline script
-|   │   ├── train_pipeline.py               # Model training pipeline script
-|   └── utils.py                            # Utility functions (e.g., data processing, evaluation)
-├── .gitignore                              # Specifies files to ignore in version control
-├── README.md                               # Project documentation
-├── requirments.txt                         # List of required dependencies
-└── setup.py                                # Script for installing the package
-                     # Project documentation (this file)
+├── src                                   # Source code for the project
+│   ├── __init__.py                       # Marks src as a package
+│   ├── components                        # Core project modules
+│   │   ├── __init__.py                    # Marks components as a package
+│   │   ├── data_ingestion.py              # Script to load and preprocess data
+│   │   ├── data_transformation.py         # Handles feature transformation & scaling
+│   │   ├── model_trainer.py               # Model training script
+│   ├── exception.py                        # Custom exception handling
+│   ├── logger.py                           # Logging setup for debugging & tracking
+│   ├── pipeline                            # Pipeline for model training & prediction
+│   │   ├── __init__.py                     # Marks pipeline as a package
+│   │   ├── predict_pipeline.py             # Prediction pipeline script
+│   │   ├── train_pipeline.py               # Model training pipeline script
+│   └── utils.py                            # Utility functions (e.g., data processing, evaluation)
+├── static                                 # Stores static assets (CSS, images)
+│   ├── images                             # Image assets used in the web app
+│   │   └── background.jpg                 # Background image for the UI (optimize for performance)
+│   ├── style_home.css                      # CSS styles for the home page
+│   └── style_index.css                     # CSS styles for the index page (consider merging common styles)
+├── templates                              # HTML templates for rendering web pages
+│   ├── home.html                          # Home page template
+│   └── index.html                         # Main index page template
+├── .gitignore                             # Specifies files to ignore in version control
+├── README.md                              # Project documentation and setup guide
+├── requirements_lib.txt                   # List of required dependencies
+├── requirements.txt                       
+└── setup.py                               # Script for installing the package
+
 
 ```
 
@@ -106,10 +117,22 @@ Examination-Marks-Predictor/
 **2.** Install the required dependencies:
 
    ```bash
-   pip install -r requirements.txt
+   pip install -r requirements_lib.txt
    ```
 
-**3.** Run the notebook or Python script to train and predict the student's performance.
+**3.** Run the data_ingestion.py script to train your model.<br><br>
+  (mac/linux)<br>
+   ```bash
+    python src/components/data_ingestion.py
+   ```
+  Windows<br>
+  ```bash
+    python src\components\data_ingestion.py
+  ```
+**4.** Run app.py(flask app) to use the model (on localhost 127.0.0.1:5000)
+```bash
+ pyhton app.py
+```
 
 ---
 
