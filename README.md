@@ -131,7 +131,7 @@ Examination-Marks-Predictor/
   ```
 **4.** Run app.py(flask app) to use the model (on localhost 127.0.0.1:5000)
 ```bash
- pyhton app.py
+streamlit run app.py
 ```
 
 ---
